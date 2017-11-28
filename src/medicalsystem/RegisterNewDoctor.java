@@ -7,7 +7,7 @@ package medicalsystem;
 
 /**
  *
- * @author user
+ * @author b00716587
  */
 public class RegisterNewDoctor extends javax.swing.JFrame {
 
@@ -27,40 +27,56 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        MainMenuTitle = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        RegisterNewDoctor = new javax.swing.JPanel();
+        javax.swing.JLabel RegDoctorTitle = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
+        MainMenuTitle1 = new javax.swing.JLabel();
+        Register_New_Doctor = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
 
+        jLabel2.setText("jLabel2");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        MainMenuTitle.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        MainMenuTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        MainMenuTitle.setText("Medical Resource Managment System");
+        RegisterNewDoctor.setPreferredSize(new java.awt.Dimension(800, 480));
 
-        jPanel2.setPreferredSize(new java.awt.Dimension(800, 480));
+        RegDoctorTitle.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        RegDoctorTitle.setText("Register New Doctor");
 
-        jLabel1.setText("reg screen");
+        jLabel1.setText("tttttttttttttt");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(594, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(193, 193, 193))
+        javax.swing.GroupLayout RegisterNewDoctorLayout = new javax.swing.GroupLayout(RegisterNewDoctor);
+        RegisterNewDoctor.setLayout(RegisterNewDoctorLayout);
+        RegisterNewDoctorLayout.setHorizontalGroup(
+            RegisterNewDoctorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RegisterNewDoctorLayout.createSequentialGroup()
+                .addGap(212, 212, 212)
+                .addComponent(RegDoctorTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 383, Short.MAX_VALUE)
+                .addGap(205, 205, 205))
+            .addGroup(RegisterNewDoctorLayout.createSequentialGroup()
+                .addGap(125, 125, 125)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 529, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(153, 153, 153)
-                .addComponent(jLabel1)
-                .addContainerGap(417, Short.MAX_VALUE))
+        RegisterNewDoctorLayout.setVerticalGroup(
+            RegisterNewDoctorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RegisterNewDoctorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(RegDoctorTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(105, 105, 105)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(266, Short.MAX_VALUE))
         );
+
+        RegDoctorTitle.getAccessibleContext().setAccessibleName("Reg_Title");
+
+        MainMenuTitle1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        MainMenuTitle1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MainMenuTitle1.setText("Medical Resource Managment System");
+        MainMenuTitle1.setToolTipText("");
 
         jMenu2.setText("Options");
 
@@ -72,33 +88,38 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem1);
 
-        jMenuBar1.add(jMenu2);
+        Register_New_Doctor.add(jMenu2);
 
         jMenu3.setText("Help");
-        jMenuBar1.add(jMenu3);
+        Register_New_Doctor.add(jMenu3);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(Register_New_Doctor);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(MainMenuTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 843, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 849, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addComponent(RegisterNewDoctor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(26, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(MainMenuTitle1, javax.swing.GroupLayout.DEFAULT_SIZE, 837, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(MainMenuTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 586, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(80, 80, 80)
+                .addComponent(RegisterNewDoctor, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 6, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(10, 10, 10)
+                    .addComponent(MainMenuTitle1, javax.swing.GroupLayout.DEFAULT_SIZE, 74, Short.MAX_VALUE)
+                    .addContainerGap(517, Short.MAX_VALUE)))
         );
 
         pack();
@@ -145,12 +166,13 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel MainMenuTitle;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel MainMenuTitle1;
+    public javax.swing.JPanel RegisterNewDoctor;
+    private javax.swing.JMenuBar Register_New_Doctor;
+    public javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }

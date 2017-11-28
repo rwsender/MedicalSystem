@@ -18,6 +18,8 @@ public class MedicalSystem {
         // TODO code application logic here
         MainMenu m = new MainMenu();
         m.setVisible(true);
+        m.pack();
+        m.setLocationRelativeTo(null);
     }
     
 }
