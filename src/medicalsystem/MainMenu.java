@@ -18,6 +18,7 @@ public class MainMenu extends javax.swing.JFrame {
      */
     public MainMenu() {
         initComponents();
+        this.Reg_Doctor_Screen.setVisible(false);
     }
 
     /**
@@ -30,11 +31,13 @@ public class MainMenu extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenu1 = new javax.swing.JMenu();
-        Main_Menu = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         MainMenuTitle = new javax.swing.JLabel();
+        Side_Menu = new javax.swing.JPanel();
+        Admin_Button = new javax.swing.JButton();
+        Reg_Doctor_Button = new javax.swing.JButton();
+        View_Doctor_Button = new javax.swing.JButton();
+        Base_Panel = new javax.swing.JLayeredPane();
+        Reg_Doctor_Screen = new javax.swing.JLayeredPane();
         Register_New_Doctor = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -44,57 +47,72 @@ public class MainMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton3.setText("Admin Area");
-        jButton3.setToolTipText("Remove/Edit Doctors Registered in the system.");
-        jButton3.setPreferredSize(new java.awt.Dimension(150, 50));
-
-        jButton2.setText("Register New Doctor");
-        jButton2.setToolTipText("Click here to register a new doctor on the system.");
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setPreferredSize(new java.awt.Dimension(150, 50));
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
-            }
-        });
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("Doctor Availabilty");
-        jButton1.setToolTipText("See what doctors are available for patients.");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setPreferredSize(new java.awt.Dimension(80, 40));
-
-        javax.swing.GroupLayout Main_MenuLayout = new javax.swing.GroupLayout(Main_Menu);
-        Main_Menu.setLayout(Main_MenuLayout);
-        Main_MenuLayout.setHorizontalGroup(
-            Main_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Main_MenuLayout.createSequentialGroup()
-                .addContainerGap(325, Short.MAX_VALUE)
-                .addGroup(Main_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(325, Short.MAX_VALUE))
-        );
-        Main_MenuLayout.setVerticalGroup(
-            Main_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Main_MenuLayout.createSequentialGroup()
-                .addGap(98, 98, 98)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(134, Short.MAX_VALUE))
-        );
-
         MainMenuTitle.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         MainMenuTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MainMenuTitle.setText("Medical Resource Managment System");
+
+        Admin_Button.setText("Admin Area");
+        Admin_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Admin_ButtonActionPerformed(evt);
+            }
+        });
+
+        Reg_Doctor_Button.setText("Register New Doctor");
+        Reg_Doctor_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Reg_Doctor_ButtonActionPerformed(evt);
+            }
+        });
+
+        View_Doctor_Button.setText("View Doctors");
+        View_Doctor_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                View_Doctor_ButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Side_MenuLayout = new javax.swing.GroupLayout(Side_Menu);
+        Side_Menu.setLayout(Side_MenuLayout);
+        Side_MenuLayout.setHorizontalGroup(
+            Side_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Side_MenuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Side_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Reg_Doctor_Button, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
+                    .addComponent(Admin_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(View_Doctor_Button, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        Side_MenuLayout.setVerticalGroup(
+            Side_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Side_MenuLayout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(View_Doctor_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Reg_Doctor_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Admin_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Base_Panel.setBackground(new java.awt.Color(51, 255, 255));
+        Base_Panel.setLayout(new javax.swing.OverlayLayout(Base_Panel));
+
+        Reg_Doctor_Screen.setBackground(new java.awt.Color(255, 255, 0));
+
+        javax.swing.GroupLayout Reg_Doctor_ScreenLayout = new javax.swing.GroupLayout(Reg_Doctor_Screen);
+        Reg_Doctor_Screen.setLayout(Reg_Doctor_ScreenLayout);
+        Reg_Doctor_ScreenLayout.setHorizontalGroup(
+            Reg_Doctor_ScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 610, Short.MAX_VALUE)
+        );
+        Reg_Doctor_ScreenLayout.setVerticalGroup(
+            Reg_Doctor_ScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 388, Short.MAX_VALUE)
+        );
+
+        Base_Panel.add(Reg_Doctor_Screen);
 
         jMenu2.setText("Options");
 
@@ -117,10 +135,16 @@ public class MainMenu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Main_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(MainMenuTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(MainMenuTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(Side_Menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Base_Panel)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -128,33 +152,35 @@ public class MainMenu extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(MainMenuTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Main_Menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Side_Menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Base_Panel))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        RegisterNewDoctor d = new RegisterNewDoctor();
-        this.Main_Menu.setVisible(false);
-        d.RegisterNewDoctor.setVisible(true);
-//        d.setVisible(true);
-//        d.pack();
-//        d.setLocationRelativeTo(null);
-//        d.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+    private void Admin_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Admin_ButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2MouseClicked
+    }//GEN-LAST:event_Admin_ButtonActionPerformed
+
+    private void View_Doctor_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_View_Doctor_ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_View_Doctor_ButtonActionPerformed
+
+    private void Reg_Doctor_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Reg_Doctor_ButtonActionPerformed
+        this.Base_Panel.setVisible(false);
+        repaint();
+        this.Reg_Doctor_Screen.setVisible(true);
+        repaint();
+    }//GEN-LAST:event_Reg_Doctor_ButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -192,12 +218,14 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Admin_Button;
+    private javax.swing.JLayeredPane Base_Panel;
     private javax.swing.JLabel MainMenuTitle;
-    private javax.swing.JPanel Main_Menu;
+    private javax.swing.JButton Reg_Doctor_Button;
+    private javax.swing.JLayeredPane Reg_Doctor_Screen;
     private javax.swing.JMenuBar Register_New_Doctor;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JPanel Side_Menu;
+    private javax.swing.JButton View_Doctor_Button;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;

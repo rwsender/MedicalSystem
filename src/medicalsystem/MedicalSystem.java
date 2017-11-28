@@ -16,10 +16,11 @@ public class MedicalSystem {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        MainMenu m = new MainMenu();
-        m.setVisible(true);
-        m.pack();
-        m.setLocationRelativeTo(null);
+        MainMenu v = new MainMenu();
+        v.setVisible(true);
+        
+        v.pack();
+        v.setLocationRelativeTo(null);
     }
     
 }
