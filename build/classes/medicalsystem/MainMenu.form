@@ -59,18 +59,11 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="MainMenuTitle" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                      <Component id="Side_Menu" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="Base_Panel" max="32767" attributes="0"/>
-                  </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jPanel1" max="32767" attributes="0"/>
+                  <Component id="MainMenuTitle" pref="788" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -81,11 +74,8 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="MainMenuTitle" min="-2" pref="74" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="Side_Menu" max="32767" attributes="0"/>
-                  <Component id="Base_Panel" max="32767" attributes="0"/>
-              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -101,32 +91,40 @@
         <Property name="text" type="java.lang.String" value="Medical Resource Managment System"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JPanel" name="Side_Menu">
+    <Container class="javax.swing.JPanel" name="jPanel1">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="Reg_Doctor_Button" pref="148" max="32767" attributes="0"/>
-                      <Component id="Admin_Button" alignment="0" max="32767" attributes="0"/>
-                      <Component id="View_Doctor_Button" alignment="0" pref="148" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="329" max="-2" attributes="0"/>
+                          <Component id="Admin_Button" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="305" max="-2" attributes="0"/>
+                          <Component id="Reg_Doctor_Button" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="323" max="-2" attributes="0"/>
+                          <Component id="View_Doctor_Button" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                  <Component id="View_Doctor_Button" min="-2" pref="45" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="Reg_Doctor_Button" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="Admin_Button" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="Admin_Button" min="-2" pref="45" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="Reg_Doctor_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="View_Doctor_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="271" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -136,9 +134,6 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Admin Area"/>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Admin_ButtonActionPerformed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Reg_Doctor_Button">
           <Properties>
@@ -152,67 +147,8 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="View Doctors"/>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="View_Doctor_ButtonActionPerformed"/>
-          </Events>
         </Component>
       </SubComponents>
-    </Container>
-    <Container class="javax.swing.JLayeredPane" name="Base_Panel">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="33" type="rgb"/>
-        </Property>
-      </Properties>
-      <SubComponents>
-        <Container class="javax.swing.JLayeredPane" name="Reg_Doctor_Screen">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="ff" red="ff" type="rgb"/>
-            </Property>
-          </Properties>
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="610" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="388" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-        </Container>
-      </SubComponents>
-      <LayoutCode>
-        <CodeStatement>
-          <CodeExpression id="1_Base_Panel">
-            <CodeVariable name="Base_Panel" type="8194" declaredType="javax.swing.JLayeredPane"/>
-            <ExpressionOrigin>
-              <ExpressionProvider type="ComponentRef">
-                <ComponentRef name="Base_Panel"/>
-              </ExpressionProvider>
-            </ExpressionOrigin>
-          </CodeExpression>
-          <StatementProvider type="CodeMethod">
-            <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
-          </StatementProvider>
-          <Parameters>
-            <CodeExpression id="2">
-              <ExpressionOrigin>
-                <ExpressionProvider type="CodeConstructor">
-                  <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
-                </ExpressionProvider>
-                <Parameters>
-                  <CodeExpression id="1_Base_Panel"/>
-                </Parameters>
-              </ExpressionOrigin>
-            </CodeExpression>
-          </Parameters>
-        </CodeStatement>
-      </LayoutCode>
     </Container>
   </SubComponents>
 </Form>
