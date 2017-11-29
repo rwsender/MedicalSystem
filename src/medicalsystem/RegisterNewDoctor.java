@@ -37,10 +37,10 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         Doctor_Name_Field = new javax.swing.JTextField();
-        Contact_Address_Box = new javax.swing.JTextField();
+        Contact_Number_ID = new javax.swing.JTextField();
         Medical_Displine_Combo = new javax.swing.JComboBox<>();
-        Contact_Address_Box1 = new javax.swing.JTextField();
-        Contact_Method_Combo1 = new javax.swing.JComboBox<>();
+        Contact_Address_Box = new javax.swing.JTextField();
+        Contact_Method_Combo = new javax.swing.JComboBox<>();
         Cancel_Button_DrForm = new javax.swing.JButton();
         Submit_Btn_DctrForm = new javax.swing.JButton();
         Register_New_Doctor = new javax.swing.JMenuBar();
@@ -74,21 +74,21 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
             }
         });
 
+        Contact_Number_ID.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Contact_Number_IDActionPerformed(evt);
+            }
+        });
+
+        Medical_Displine_Combo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cardiology", "Pulmonology", "Infectious Disease", "Hematology", "Intensive Care Medicine", "Neurology", "Ophthalmology", "Orthopedics", "Urology", "Surgery" }));
+
         Contact_Address_Box.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Contact_Address_BoxActionPerformed(evt);
             }
         });
 
-        Medical_Displine_Combo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cardiology", "Pulmonology", "Infectious Disease", "Hematology", "Intensive Care Medicine", "Neurology", "Ophthalmology", "Orthopedics", "Urology", "Surgery" }));
-
-        Contact_Address_Box1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Contact_Address_Box1ActionPerformed(evt);
-            }
-        });
-
-        Contact_Method_Combo1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Telephone", "Skype", "FaceTime" }));
+        Contact_Method_Combo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Telephone", "Skype", "FaceTime" }));
 
         Cancel_Button_DrForm.setText("Cancel");
         Cancel_Button_DrForm.addActionListener(new java.awt.event.ActionListener() {
@@ -98,6 +98,11 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
         });
 
         Submit_Btn_DctrForm.setText("Submit");
+        Submit_Btn_DctrForm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Submit_Btn_DctrFormActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -109,17 +114,6 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3))
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(67, 67, 67)
-                                        .addComponent(Contact_Address_Box1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addGap(66, 66, 66)
-                                        .addComponent(Doctor_Name_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -128,13 +122,21 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(Medical_Displine_Combo, javax.swing.GroupLayout.Alignment.LEADING, 0, 170, Short.MAX_VALUE)
-                                    .addComponent(Contact_Address_Box, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Contact_Method_Combo1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(Submit_Btn_DctrForm, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(Contact_Number_ID, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Contact_Method_Combo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Submit_Btn_DctrForm, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3))
+                                .addGap(67, 67, 67)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Doctor_Name_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Contact_Address_Box, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(84, 84, 84)
                         .addComponent(jLabel1)))
-                .addContainerGap(82, Short.MAX_VALUE))
+                .addContainerGap(77, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -148,15 +150,17 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Contact_Address_Box1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Contact_Address_Box, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Contact_Method_Combo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(Contact_Method_Combo, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Contact_Address_Box, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Contact_Number_ID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -229,16 +233,20 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Doctor_Name_FieldActionPerformed
 
+    private void Contact_Number_IDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Contact_Number_IDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Contact_Number_IDActionPerformed
+
     private void Contact_Address_BoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Contact_Address_BoxActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Contact_Address_BoxActionPerformed
 
-    private void Contact_Address_Box1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Contact_Address_Box1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Contact_Address_Box1ActionPerformed
-
     private void Cancel_Button_DrFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cancel_Button_DrFormActionPerformed
-        // TODO add your handling code here:
+         Doctor_Name_Field.setText("");
+         Contact_Number_ID.setText("");
+         Contact_Address_Box.setText("");
+         Contact_Method_Combo.setSelectedItem("Telephone");
+         Medical_Displine_Combo.setSelectedItem("Cardiology");
     }//GEN-LAST:event_Cancel_Button_DrFormActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
@@ -246,6 +254,16 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
         MainMenu m = new MainMenu();
         m.setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void Submit_Btn_DctrFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submit_Btn_DctrFormActionPerformed
+         String docName = Doctor_Name_Field.getText();
+         String contactID = Contact_Number_ID.getText();
+         String contactAddress = Contact_Address_Box.getText();
+         Object contactMethod = Contact_Method_Combo.getSelectedItem();
+         Object medicalDispiline = Medical_Displine_Combo.getSelectedItem();
+        AddNewDoctor a = new AddNewDoctor();
+        a.save(docName, contactAddress, contactMethod,contactID, medicalDispiline);
+    }//GEN-LAST:event_Submit_Btn_DctrFormActionPerformed
 
     /**
      * @param args the command line arguments
@@ -285,8 +303,8 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Cancel_Button_DrForm;
     private javax.swing.JTextField Contact_Address_Box;
-    private javax.swing.JTextField Contact_Address_Box1;
-    private javax.swing.JComboBox<String> Contact_Method_Combo1;
+    private javax.swing.JComboBox<String> Contact_Method_Combo;
+    private javax.swing.JTextField Contact_Number_ID;
     private javax.swing.JTextField Doctor_Name_Field;
     private javax.swing.JLabel MainMenuTitle;
     private javax.swing.JComboBox<String> Medical_Displine_Combo;
