@@ -19,7 +19,9 @@ import java.util.Calendar;
  */
 public class AddNewDoctor {
         public static void save(String doctorName, String doctorAddress, Object contactMethod, String contactID, Object medicalDisipline) {
-
+            
+            
+            
         try (FileWriter fw = new FileWriter("DoctorRecordFile.txt", true); //creates a new filewriter, true is for appending files so the data is not overwritten
                 BufferedWriter bw = new BufferedWriter(fw);
                 PrintWriter out = new PrintWriter(bw)) {

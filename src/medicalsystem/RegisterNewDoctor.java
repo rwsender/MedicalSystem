@@ -263,6 +263,11 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
          Object medicalDispiline = Medical_Displine_Combo.getSelectedItem();
         AddNewDoctor a = new AddNewDoctor();
         a.save(docName, contactAddress, contactMethod,contactID, medicalDispiline);
+        Doctor_Name_Field.setText("");
+        Contact_Number_ID.setText("");
+        Contact_Address_Box.setText("");
+        Contact_Method_Combo.setSelectedItem("Telephone");
+        Medical_Displine_Combo.setSelectedItem("Cardiology");
     }//GEN-LAST:event_Submit_Btn_DctrFormActionPerformed
 
     /**

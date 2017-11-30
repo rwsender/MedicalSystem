@@ -29,6 +29,7 @@ public class DoctorAvailability extends javax.swing.JFrame {
 
         MainMenuTitle = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        Doc_Avail_Title = new javax.swing.JLabel();
         Register_New_Doctor = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -41,15 +42,24 @@ public class DoctorAvailability extends javax.swing.JFrame {
         MainMenuTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MainMenuTitle.setText("Medical Resource Managment System");
 
+        Doc_Avail_Title.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        Doc_Avail_Title.setText("Doctor Availbility");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(302, 302, 302)
+                .addComponent(Doc_Avail_Title)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 291, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Doc_Avail_Title, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(257, Short.MAX_VALUE))
         );
 
         jMenu2.setText("Options");
@@ -147,6 +157,7 @@ public class DoctorAvailability extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Doc_Avail_Title;
     private javax.swing.JLabel MainMenuTitle;
     private javax.swing.JMenuBar Register_New_Doctor;
     private javax.swing.JMenu jMenu2;
