@@ -16,6 +16,7 @@ public class DoctorAvailability extends javax.swing.JFrame {
      */
     public DoctorAvailability() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -30,6 +31,7 @@ public class DoctorAvailability extends javax.swing.JFrame {
         MainMenuTitle = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         Doc_Avail_Title = new javax.swing.JLabel();
+        Main_Menu_Btn_2 = new javax.swing.JButton();
         Register_New_Doctor = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -45,13 +47,22 @@ public class DoctorAvailability extends javax.swing.JFrame {
         Doc_Avail_Title.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         Doc_Avail_Title.setText("Doctor Availbility");
 
+        Main_Menu_Btn_2.setText("Main Menu");
+        Main_Menu_Btn_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Main_Menu_Btn_2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(302, 302, 302)
-                .addComponent(Doc_Avail_Title)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Doc_Avail_Title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Main_Menu_Btn_2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -59,7 +70,9 @@ public class DoctorAvailability extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Doc_Avail_Title, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(257, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 201, Short.MAX_VALUE)
+                .addComponent(Main_Menu_Btn_2)
+                .addGap(24, 24, 24))
         );
 
         jMenu2.setText("Options");
@@ -121,6 +134,12 @@ public class DoctorAvailability extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
+    private void Main_Menu_Btn_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Main_Menu_Btn_2ActionPerformed
+        this.setVisible(false);
+        MainMenu a = new MainMenu();
+        a.setVisible(true);
+    }//GEN-LAST:event_Main_Menu_Btn_2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -159,6 +178,7 @@ public class DoctorAvailability extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Doc_Avail_Title;
     private javax.swing.JLabel MainMenuTitle;
+    private javax.swing.JButton Main_Menu_Btn_2;
     private javax.swing.JMenuBar Register_New_Doctor;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;

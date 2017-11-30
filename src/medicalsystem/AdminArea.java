@@ -16,6 +16,7 @@ public class AdminArea extends javax.swing.JFrame {
      */
     public AdminArea() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -29,6 +30,7 @@ public class AdminArea extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        Main_Menu_Btn_3 = new javax.swing.JButton();
         MainMenuTitle = new javax.swing.JLabel();
         Register_New_Doctor = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
@@ -40,20 +42,31 @@ public class AdminArea extends javax.swing.JFrame {
 
         jLabel1.setText("jLabel1");
 
+        Main_Menu_Btn_3.setText("Main Menu");
+        Main_Menu_Btn_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Main_Menu_Btn_3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(309, 309, 309)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
+                    .addComponent(Main_Menu_Btn_3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 252, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 193, Short.MAX_VALUE)
+                .addComponent(Main_Menu_Btn_3)
+                .addGap(27, 27, 27))
         );
 
         MainMenuTitle.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -119,6 +132,12 @@ public class AdminArea extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
+    private void Main_Menu_Btn_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Main_Menu_Btn_3ActionPerformed
+        this.setVisible(false);
+        MainMenu a = new MainMenu();
+        a.setVisible(true);
+    }//GEN-LAST:event_Main_Menu_Btn_3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -156,6 +175,7 @@ public class AdminArea extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel MainMenuTitle;
+    private javax.swing.JButton Main_Menu_Btn_3;
     private javax.swing.JMenuBar Register_New_Doctor;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu2;

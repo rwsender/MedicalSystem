@@ -134,6 +134,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Admin Area"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Admin_ButtonActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Reg_Doctor_Button">
           <Properties>
@@ -147,6 +150,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="View Doctors"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="View_Doctor_ButtonActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
