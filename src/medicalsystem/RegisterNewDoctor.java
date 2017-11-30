@@ -5,6 +5,8 @@
  */
 package medicalsystem;
 
+import java.util.Arrays;
+
 /**
  *
  * @author user
@@ -82,6 +84,11 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
         });
 
         Medical_Displine_Combo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cardiology", "Pulmonology", "Infectious Disease", "Hematology", "Intensive Care Medicine", "Neurology", "Ophthalmology", "Orthopedics", "Urology", "Surgery" }));
+        Medical_Displine_Combo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Medical_Displine_ComboActionPerformed(evt);
+            }
+        });
 
         Contact_Address_Box.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -273,31 +280,27 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
          String docName ;
          String contactID ;
          String contactAddress;
-         Object contactMethod ;
-         Object medicalDispiline;
+         String contactMethod ;
+         String medicalDispiline;
          
         }
-  
+        Object choice = Medical_Displine_Combo.getSelectedItem();
+        String choiceString = choice.toString();
+        Object contactChoice = Contact_Method_Combo.getSelectedItem();
+        String contactChoiceString = contactChoice.toString();
         int doctorAmount = 0;  
-       Doctor[] DoctorArray = new Doctor[100];
-       DoctorArray[doctorAmount] = new Doctor();
-        DoctorArray[doctorAmount].docName = Doctor_Name_Field.getText();
-         DoctorArray[doctorAmount].contactID = Contact_Number_ID.getText();
-         DoctorArray[doctorAmount].contactAddress = Contact_Address_Box.getText();
-         DoctorArray[doctorAmount].contactMethod = Contact_Method_Combo.getSelectedItem();
-         DoctorArray[doctorAmount].medicalDispiline= Medical_Displine_Combo.getSelectedItem();
-       System.out.println(DoctorArray[0].docName);
-       doctorAmount = doctorAmount + 1;
-     //   save(DoctorArray);
-       // a.save(DoctorArray[doctorAmount]);
-        
-         String docName = Doctor_Name_Field.getText();
-         String contactID = Contact_Number_ID.getText();
-         String contactAddress = Contact_Address_Box.getText();
-         Object contactMethod = Contact_Method_Combo.getSelectedItem();
-         Object medicalDispiline = Medical_Displine_Combo.getSelectedItem();
         AddNewDoctor a = new AddNewDoctor();
-        a.save(docName, contactAddress, contactMethod,contactID, medicalDispiline);
+      
+       String docName = Doctor_Name_Field.getText();
+       String contactID = Contact_Number_ID.getText();
+       String contactAddress = Contact_Address_Box.getText();
+       String contactMethod = contactChoiceString;
+       String medicalDispiline = choiceString;
+       String[] Doctor = new String[] {docName, contactID, contactAddress, contactMethod, medicalDispiline };
+       doctorAmount = doctorAmount + 1;
+       System.out.println(Doctor);
+       a.save(Doctor);
+       
         Doctor_Name_Field.setText("");
         Contact_Number_ID.setText("");
         Contact_Address_Box.setText("");
@@ -310,6 +313,10 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
         MainMenu a = new MainMenu();
         a.setVisible(true);
     }//GEN-LAST:event_Main_Menu_Btn_1ActionPerformed
+
+    private void Medical_Displine_ComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Medical_Displine_ComboActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Medical_Displine_ComboActionPerformed
 
     /**
      * @param args the command line arguments
