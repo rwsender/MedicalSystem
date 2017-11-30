@@ -256,19 +256,35 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void Submit_Btn_DctrFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submit_Btn_DctrFormActionPerformed
-         String docName = Doctor_Name_Field.getText();
-         String contactID = Contact_Number_ID.getText();
-         String contactAddress = Contact_Address_Box.getText();
-         Object contactMethod = Contact_Method_Combo.getSelectedItem();
-         Object medicalDispiline = Medical_Displine_Combo.getSelectedItem();
-        AddNewDoctor a = new AddNewDoctor();
-        a.save(docName, contactAddress, contactMethod,contactID, medicalDispiline);
+         class Doctor {
+         String docName ;
+         String contactID ;
+         String contactAddress;
+         Object contactMethod ;
+         Object medicalDispiline;
+         
+        }
+  
+        int doctorAmount = 0;  
+       Doctor[] DoctorArray = new Doctor[100];
+       DoctorArray[doctorAmount] = new Doctor();
+        DoctorArray[doctorAmount].docName = Doctor_Name_Field.getText();
+         DoctorArray[doctorAmount].contactID = Contact_Number_ID.getText();
+         DoctorArray[doctorAmount].contactAddress = Contact_Address_Box.getText();
+         DoctorArray[doctorAmount].contactMethod = Contact_Method_Combo.getSelectedItem();
+         DoctorArray[doctorAmount].medicalDispiline= Medical_Displine_Combo.getSelectedItem();
+       System.out.println(DoctorArray[0].docName);
+       doctorAmount = doctorAmount + 1;
+     //   save(DoctorArray);
+       // a.save(DoctorArray[doctorAmount]);
+        
     }//GEN-LAST:event_Submit_Btn_DctrFormActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
