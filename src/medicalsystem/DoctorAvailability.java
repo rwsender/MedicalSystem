@@ -5,6 +5,11 @@
  */
 package medicalsystem;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
 /**
  *
  * @author user
@@ -186,4 +191,26 @@ public class DoctorAvailability extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+String line = null;
+    File file = new File( "AvailabilityUpdate.txt" );
+
+    FileReader fr = null;
+    try
+    {
+        fr = new FileReader( file );
+    } 
+    catch (FileNotFoundException e); 
+    {  
+        System.out.println( "File doesn't exists" );
+        e.printStackTrace();
+    }
+    BufferedReader br = new BufferedReader( fr );
+
+    try
+    {
+        while( (line = br.readLine()) != null )
+    {
+        System.out.println( line );
+    }
+    }
 }
