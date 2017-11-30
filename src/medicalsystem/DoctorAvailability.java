@@ -32,6 +32,27 @@ public class DoctorAvailability extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         Doc_Avail_Title = new javax.swing.JLabel();
         Main_Menu_Btn_2 = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        Doctor_Status_1 = new javax.swing.JPanel();
+        Doctor_Status_2 = new javax.swing.JPanel();
+        Doctor_Status_3 = new javax.swing.JPanel();
+        Doctor_Status_4 = new javax.swing.JPanel();
+        Doctor_Status_5 = new javax.swing.JPanel();
+        Doctor_Status_6 = new javax.swing.JPanel();
+        Doctor_Status_7 = new javax.swing.JPanel();
+        Doctor_Status_8 = new javax.swing.JPanel();
+        Doctor_Status_9 = new javax.swing.JPanel();
+        Doctor_Status_10 = new javax.swing.JPanel();
+        Doctor_Name_5 = new javax.swing.JLabel();
+        Doctor_Name_1 = new javax.swing.JLabel();
+        Doctor_Name_2 = new javax.swing.JLabel();
+        Doctor_Name_3 = new javax.swing.JLabel();
+        Doctor_Name_4 = new javax.swing.JLabel();
+        Doctor_Name_10 = new javax.swing.JLabel();
+        Doctor_Name_9 = new javax.swing.JLabel();
+        Doctor_Name_8 = new javax.swing.JLabel();
+        Doctor_Name_7 = new javax.swing.JLabel();
+        Doctor_Name_6 = new javax.swing.JLabel();
         Register_New_Doctor = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -54,15 +75,218 @@ public class DoctorAvailability extends javax.swing.JFrame {
             }
         });
 
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cardiology", "Pulmonology", "Infectious Disease", "Hematology", "Intensive Care Medicine", "Neurology", "Ophthalmology", "Orthopedics", "Urology", "Surgery" }));
+
+        Doctor_Status_1.setBackground(new java.awt.Color(204, 204, 204));
+        Doctor_Status_1.setPreferredSize(new java.awt.Dimension(25, 25));
+
+        javax.swing.GroupLayout Doctor_Status_1Layout = new javax.swing.GroupLayout(Doctor_Status_1);
+        Doctor_Status_1.setLayout(Doctor_Status_1Layout);
+        Doctor_Status_1Layout.setHorizontalGroup(
+            Doctor_Status_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+        Doctor_Status_1Layout.setVerticalGroup(
+            Doctor_Status_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        Doctor_Status_2.setBackground(new java.awt.Color(204, 204, 204));
+        Doctor_Status_2.setPreferredSize(new java.awt.Dimension(25, 25));
+
+        javax.swing.GroupLayout Doctor_Status_2Layout = new javax.swing.GroupLayout(Doctor_Status_2);
+        Doctor_Status_2.setLayout(Doctor_Status_2Layout);
+        Doctor_Status_2Layout.setHorizontalGroup(
+            Doctor_Status_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+        Doctor_Status_2Layout.setVerticalGroup(
+            Doctor_Status_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+
+        Doctor_Status_3.setBackground(new java.awt.Color(204, 204, 204));
+        Doctor_Status_3.setPreferredSize(new java.awt.Dimension(25, 25));
+
+        javax.swing.GroupLayout Doctor_Status_3Layout = new javax.swing.GroupLayout(Doctor_Status_3);
+        Doctor_Status_3.setLayout(Doctor_Status_3Layout);
+        Doctor_Status_3Layout.setHorizontalGroup(
+            Doctor_Status_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+        Doctor_Status_3Layout.setVerticalGroup(
+            Doctor_Status_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+
+        Doctor_Status_4.setBackground(new java.awt.Color(204, 204, 204));
+        Doctor_Status_4.setPreferredSize(new java.awt.Dimension(25, 25));
+
+        javax.swing.GroupLayout Doctor_Status_4Layout = new javax.swing.GroupLayout(Doctor_Status_4);
+        Doctor_Status_4.setLayout(Doctor_Status_4Layout);
+        Doctor_Status_4Layout.setHorizontalGroup(
+            Doctor_Status_4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+        Doctor_Status_4Layout.setVerticalGroup(
+            Doctor_Status_4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+
+        Doctor_Status_5.setBackground(new java.awt.Color(204, 204, 204));
+        Doctor_Status_5.setPreferredSize(new java.awt.Dimension(25, 25));
+
+        javax.swing.GroupLayout Doctor_Status_5Layout = new javax.swing.GroupLayout(Doctor_Status_5);
+        Doctor_Status_5.setLayout(Doctor_Status_5Layout);
+        Doctor_Status_5Layout.setHorizontalGroup(
+            Doctor_Status_5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+        Doctor_Status_5Layout.setVerticalGroup(
+            Doctor_Status_5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+
+        Doctor_Status_6.setBackground(new java.awt.Color(204, 204, 204));
+        Doctor_Status_6.setPreferredSize(new java.awt.Dimension(25, 25));
+
+        javax.swing.GroupLayout Doctor_Status_6Layout = new javax.swing.GroupLayout(Doctor_Status_6);
+        Doctor_Status_6.setLayout(Doctor_Status_6Layout);
+        Doctor_Status_6Layout.setHorizontalGroup(
+            Doctor_Status_6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+        Doctor_Status_6Layout.setVerticalGroup(
+            Doctor_Status_6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+
+        Doctor_Status_7.setBackground(new java.awt.Color(204, 204, 204));
+        Doctor_Status_7.setPreferredSize(new java.awt.Dimension(25, 25));
+
+        javax.swing.GroupLayout Doctor_Status_7Layout = new javax.swing.GroupLayout(Doctor_Status_7);
+        Doctor_Status_7.setLayout(Doctor_Status_7Layout);
+        Doctor_Status_7Layout.setHorizontalGroup(
+            Doctor_Status_7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+        Doctor_Status_7Layout.setVerticalGroup(
+            Doctor_Status_7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+
+        Doctor_Status_8.setBackground(new java.awt.Color(204, 204, 204));
+        Doctor_Status_8.setPreferredSize(new java.awt.Dimension(25, 25));
+
+        javax.swing.GroupLayout Doctor_Status_8Layout = new javax.swing.GroupLayout(Doctor_Status_8);
+        Doctor_Status_8.setLayout(Doctor_Status_8Layout);
+        Doctor_Status_8Layout.setHorizontalGroup(
+            Doctor_Status_8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+        Doctor_Status_8Layout.setVerticalGroup(
+            Doctor_Status_8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+
+        Doctor_Status_9.setBackground(new java.awt.Color(204, 204, 204));
+        Doctor_Status_9.setPreferredSize(new java.awt.Dimension(25, 25));
+
+        javax.swing.GroupLayout Doctor_Status_9Layout = new javax.swing.GroupLayout(Doctor_Status_9);
+        Doctor_Status_9.setLayout(Doctor_Status_9Layout);
+        Doctor_Status_9Layout.setHorizontalGroup(
+            Doctor_Status_9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+        Doctor_Status_9Layout.setVerticalGroup(
+            Doctor_Status_9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+
+        Doctor_Status_10.setBackground(new java.awt.Color(204, 204, 204));
+        Doctor_Status_10.setPreferredSize(new java.awt.Dimension(25, 25));
+
+        javax.swing.GroupLayout Doctor_Status_10Layout = new javax.swing.GroupLayout(Doctor_Status_10);
+        Doctor_Status_10.setLayout(Doctor_Status_10Layout);
+        Doctor_Status_10Layout.setHorizontalGroup(
+            Doctor_Status_10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+        Doctor_Status_10Layout.setVerticalGroup(
+            Doctor_Status_10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+
+        Doctor_Name_5.setText("Unregistered");
+
+        Doctor_Name_1.setText("Unregistered");
+
+        Doctor_Name_2.setText("Unregistered");
+
+        Doctor_Name_3.setText("Unregistered");
+
+        Doctor_Name_4.setText("Unregistered");
+
+        Doctor_Name_10.setText("Unregistered");
+
+        Doctor_Name_9.setText("Unregistered");
+
+        Doctor_Name_8.setText("Unregistered");
+
+        Doctor_Name_7.setText("Unregistered");
+
+        Doctor_Name_6.setText("Unregistered");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(302, 302, 302)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Doc_Avail_Title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Main_Menu_Btn_2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(302, 302, 302)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(Doc_Avail_Title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Main_Menu_Btn_2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(255, 255, 255)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(Doctor_Status_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Doctor_Name_2, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(Doctor_Status_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Doctor_Name_1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(Doctor_Status_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Doctor_Name_3, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(Doctor_Status_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Doctor_Name_4, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(Doctor_Status_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Doctor_Name_5, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Doctor_Status_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Doctor_Status_7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Doctor_Status_8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Doctor_Status_9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Doctor_Status_10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(12, 12, 12)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Doctor_Name_7, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Doctor_Name_6, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Doctor_Name_8, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Doctor_Name_9, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Doctor_Name_10, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -70,7 +294,53 @@ public class DoctorAvailability extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Doc_Avail_Title, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 201, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Doctor_Status_1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Doctor_Name_1, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Doctor_Status_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Doctor_Name_2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Doctor_Status_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Doctor_Name_3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Doctor_Status_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Doctor_Name_4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Doctor_Status_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Doctor_Name_5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Doctor_Name_6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Doctor_Status_6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Doctor_Status_7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Doctor_Status_8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Doctor_Status_9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Doctor_Status_10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Doctor_Name_7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Doctor_Name_8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Doctor_Name_9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Doctor_Name_10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Main_Menu_Btn_2)
                 .addGap(24, 24, 24))
         );
@@ -177,9 +447,30 @@ public class DoctorAvailability extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Doc_Avail_Title;
+    private javax.swing.JLabel Doctor_Name_1;
+    private javax.swing.JLabel Doctor_Name_10;
+    private javax.swing.JLabel Doctor_Name_2;
+    private javax.swing.JLabel Doctor_Name_3;
+    private javax.swing.JLabel Doctor_Name_4;
+    private javax.swing.JLabel Doctor_Name_5;
+    private javax.swing.JLabel Doctor_Name_6;
+    private javax.swing.JLabel Doctor_Name_7;
+    private javax.swing.JLabel Doctor_Name_8;
+    private javax.swing.JLabel Doctor_Name_9;
+    private javax.swing.JPanel Doctor_Status_1;
+    private javax.swing.JPanel Doctor_Status_10;
+    private javax.swing.JPanel Doctor_Status_2;
+    private javax.swing.JPanel Doctor_Status_3;
+    private javax.swing.JPanel Doctor_Status_4;
+    private javax.swing.JPanel Doctor_Status_5;
+    private javax.swing.JPanel Doctor_Status_6;
+    private javax.swing.JPanel Doctor_Status_7;
+    private javax.swing.JPanel Doctor_Status_8;
+    private javax.swing.JPanel Doctor_Status_9;
     private javax.swing.JLabel MainMenuTitle;
     private javax.swing.JButton Main_Menu_Btn_2;
     private javax.swing.JMenuBar Register_New_Doctor;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuItem jMenuItem1;

@@ -58,14 +58,16 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="MainMenuTitle" pref="788" max="32767" attributes="0"/>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="172" max="-2" attributes="0"/>
+                      <EmptySpace min="172" pref="172" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="MainMenuTitle" pref="788" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -109,14 +111,12 @@
                                       <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
                                       <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
                                       <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="Cancel_Button_DrForm" min="-2" pref="83" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                       <Component id="Medical_Displine_Combo" alignment="0" pref="170" max="32767" attributes="0"/>
                                       <Component id="Contact_Number_ID" alignment="0" max="32767" attributes="0"/>
                                       <Component id="Contact_Method_Combo" max="32767" attributes="0"/>
-                                      <Component id="Submit_Btn_DctrForm" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -137,11 +137,27 @@
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
-                          <Component id="Main_Menu_Btn_1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="Cancel_Button_DrForm" min="-2" pref="83" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Submit_Btn_DctrForm" min="-2" pref="81" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                  <Component id="Main_Menu_Btn_1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Reg_Doc_Cert_Date_Lbl" min="-2" pref="160" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Reg_Doc_Cert_Date" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="77" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -178,14 +194,19 @@
                       <Component id="jLabel4" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                       <Component id="Medical_Displine_Combo" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Reg_Doc_Cert_Date_Lbl" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="Reg_Doc_Cert_Date" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="24" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="Cancel_Button_DrForm" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Submit_Btn_DctrForm" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="Main_Menu_Btn_1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -299,6 +320,16 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Main_Menu_Btn_1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Reg_Doc_Cert_Date_Lbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Certification Date:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Reg_Doc_Cert_Date">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Reg_Doc_Cert_DateActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

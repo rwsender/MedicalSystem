@@ -19,6 +19,8 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     public RegisterNewDoctor() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.Reg_Doc_Cert_Date.setVisible(false);
+        this.Reg_Doc_Cert_Date_Lbl.setVisible(false);
     }
 
     /**
@@ -46,6 +48,8 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
         Cancel_Button_DrForm = new javax.swing.JButton();
         Submit_Btn_DctrForm = new javax.swing.JButton();
         Main_Menu_Btn_1 = new javax.swing.JButton();
+        Reg_Doc_Cert_Date_Lbl = new javax.swing.JLabel();
+        Reg_Doc_Cert_Date = new javax.swing.JTextField();
         Register_New_Doctor = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -119,6 +123,14 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
             }
         });
 
+        Reg_Doc_Cert_Date_Lbl.setText("Certification Date:");
+
+        Reg_Doc_Cert_Date.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Reg_Doc_Cert_DateActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -132,14 +144,12 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(Cancel_Button_DrForm, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(Medical_Displine_Combo, javax.swing.GroupLayout.Alignment.LEADING, 0, 170, Short.MAX_VALUE)
                                     .addComponent(Contact_Number_ID, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Contact_Method_Combo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(Submit_Btn_DctrForm, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(Contact_Method_Combo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -152,9 +162,21 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
                         .addGap(84, 84, 84)
                         .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(131, 131, 131)
-                        .addComponent(Main_Menu_Btn_1)))
-                .addContainerGap(77, Short.MAX_VALUE))
+                        .addGap(83, 83, 83)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(Cancel_Button_DrForm, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Submit_Btn_DctrForm, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(49, 49, 49)
+                                .addComponent(Main_Menu_Btn_1))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Reg_Doc_Cert_Date_Lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Reg_Doc_Cert_Date)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -183,13 +205,17 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Medical_Displine_Combo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Reg_Doc_Cert_Date_Lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Reg_Doc_Cert_Date, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Cancel_Button_DrForm)
                     .addComponent(Submit_Btn_DctrForm))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Main_Menu_Btn_1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(17, 17, 17))
         );
 
         jMenu2.setText("Options");
@@ -221,14 +247,15 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(MainMenuTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 788, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(172, 172, 172)))
+                        .addGap(172, 172, 172))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(MainMenuTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 788, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -315,8 +342,19 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     }//GEN-LAST:event_Main_Menu_Btn_1ActionPerformed
 
     private void Medical_Displine_ComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Medical_Displine_ComboActionPerformed
-        // TODO add your handling code here:
+        if(this.Medical_Displine_Combo.getSelectedItem() == "Surgery"){
+            this.Reg_Doc_Cert_Date.setVisible(true);
+            this.Reg_Doc_Cert_Date_Lbl.setVisible(true);
+        }
+        else {
+            this.Reg_Doc_Cert_Date.setVisible(false);
+            this.Reg_Doc_Cert_Date_Lbl.setVisible(false);
+        }
     }//GEN-LAST:event_Medical_Displine_ComboActionPerformed
+
+    private void Reg_Doc_Cert_DateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Reg_Doc_Cert_DateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Reg_Doc_Cert_DateActionPerformed
 
     /**
      * @param args the command line arguments
@@ -363,6 +401,8 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     private javax.swing.JLabel MainMenuTitle;
     private javax.swing.JButton Main_Menu_Btn_1;
     private javax.swing.JComboBox<String> Medical_Displine_Combo;
+    private javax.swing.JTextField Reg_Doc_Cert_Date;
+    private javax.swing.JLabel Reg_Doc_Cert_Date_Lbl;
     private javax.swing.JMenuBar Register_New_Doctor;
     private javax.swing.JButton Submit_Btn_DctrForm;
     private javax.swing.JLabel jLabel1;
