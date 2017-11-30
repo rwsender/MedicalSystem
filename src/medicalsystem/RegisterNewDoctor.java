@@ -269,8 +269,7 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void Submit_Btn_DctrFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submit_Btn_DctrFormActionPerformed
-<<<<<<< HEAD
-         class Doctor {
+        class Doctor {
          String docName ;
          String contactID ;
          String contactAddress;
@@ -292,7 +291,6 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
      //   save(DoctorArray);
        // a.save(DoctorArray[doctorAmount]);
         
-=======
          String docName = Doctor_Name_Field.getText();
          String contactID = Contact_Number_ID.getText();
          String contactAddress = Contact_Address_Box.getText();
@@ -305,7 +303,6 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
         Contact_Address_Box.setText("");
         Contact_Method_Combo.setSelectedItem("Telephone");
         Medical_Displine_Combo.setSelectedItem("Cardiology");
->>>>>>> 63792e4381c512e92982bba2103c7787589d63c1
     }//GEN-LAST:event_Submit_Btn_DctrFormActionPerformed
 
     private void Main_Menu_Btn_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Main_Menu_Btn_1ActionPerformed
