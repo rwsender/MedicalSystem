@@ -3,12 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/New%20User/Documents/MedicalSystem/src/medicalsystem/RegisterNewDoctor.java</file>
             <file>file:/C:/Users/New%20User/Documents/MedicalSystem/src/medicalsystem/MainMenu.java</file>
             <file>file:/C:/Users/New%20User/Documents/MedicalSystem/src/medicalsystem/AddNewDoctor.java</file>
             <file>file:/C:/Users/New%20User/Documents/MedicalSystem/src/medicalsystem/MedicalSystem.java</file>
             <file>file:/C:/Users/New%20User/Documents/MedicalSystem/src/medicalsystem/AdminArea.java</file>
             <file>file:/C:/Users/New%20User/Documents/MedicalSystem/src/medicalsystem/DoctorAvailability.java</file>
+=======
+            <file>file:/D:/Documents/MedicalSystem/src/medicalsystem/AddNewDoctor.java</file>
+            <file>file:/D:/Documents/MedicalSystem/src/medicalsystem/RegisterNewDoctor.java</file>
+            <file>file:/D:/Documents/MedicalSystem/src/medicalsystem/MainMenu.java</file>
+            <file>file:/D:/Documents/MedicalSystem/src/medicalsystem/DoctorAvailability.java</file>
+            <file>file:/D:/Documents/MedicalSystem/src/medicalsystem/AdminArea.java</file>
+>>>>>>> 63792e4381c512e92982bba2103c7787589d63c1
         </group>
     </open-files>
 </project-private>

@@ -18,8 +18,15 @@ import java.util.Calendar;
  * @author user
  */
 public class AddNewDoctor {
+<<<<<<< HEAD
         public void save(DoctorArray[]) {
 
+=======
+        public static void save(String doctorName, String doctorAddress, Object contactMethod, String contactID, Object medicalDisipline) {
+            
+            
+            
+>>>>>>> 63792e4381c512e92982bba2103c7787589d63c1
         try (FileWriter fw = new FileWriter("DoctorRecordFile.txt", true); //creates a new filewriter, true is for appending files so the data is not overwritten
                 BufferedWriter bw = new BufferedWriter(fw);
                 PrintWriter out = new PrintWriter(bw)) {

@@ -43,6 +43,7 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
         Contact_Method_Combo = new javax.swing.JComboBox<>();
         Cancel_Button_DrForm = new javax.swing.JButton();
         Submit_Btn_DctrForm = new javax.swing.JButton();
+        Main_Menu_Btn_1 = new javax.swing.JButton();
         Register_New_Doctor = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -104,6 +105,13 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
             }
         });
 
+        Main_Menu_Btn_1.setText("Main Menu");
+        Main_Menu_Btn_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Main_Menu_Btn_1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -135,7 +143,10 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
                                     .addComponent(Contact_Address_Box, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(84, 84, 84)
-                        .addComponent(jLabel1)))
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(131, 131, 131)
+                        .addComponent(Main_Menu_Btn_1)))
                 .addContainerGap(77, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -169,7 +180,9 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Cancel_Button_DrForm)
                     .addComponent(Submit_Btn_DctrForm))
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Main_Menu_Btn_1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jMenu2.setText("Options");
@@ -256,6 +269,7 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void Submit_Btn_DctrFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submit_Btn_DctrFormActionPerformed
+<<<<<<< HEAD
          class Doctor {
          String docName ;
          String contactID ;
@@ -278,7 +292,27 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
      //   save(DoctorArray);
        // a.save(DoctorArray[doctorAmount]);
         
+=======
+         String docName = Doctor_Name_Field.getText();
+         String contactID = Contact_Number_ID.getText();
+         String contactAddress = Contact_Address_Box.getText();
+         Object contactMethod = Contact_Method_Combo.getSelectedItem();
+         Object medicalDispiline = Medical_Displine_Combo.getSelectedItem();
+        AddNewDoctor a = new AddNewDoctor();
+        a.save(docName, contactAddress, contactMethod,contactID, medicalDispiline);
+        Doctor_Name_Field.setText("");
+        Contact_Number_ID.setText("");
+        Contact_Address_Box.setText("");
+        Contact_Method_Combo.setSelectedItem("Telephone");
+        Medical_Displine_Combo.setSelectedItem("Cardiology");
+>>>>>>> 63792e4381c512e92982bba2103c7787589d63c1
     }//GEN-LAST:event_Submit_Btn_DctrFormActionPerformed
+
+    private void Main_Menu_Btn_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Main_Menu_Btn_1ActionPerformed
+        this.setVisible(false);
+        MainMenu a = new MainMenu();
+        a.setVisible(true);
+    }//GEN-LAST:event_Main_Menu_Btn_1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -323,6 +357,7 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     private javax.swing.JTextField Contact_Number_ID;
     private javax.swing.JTextField Doctor_Name_Field;
     private javax.swing.JLabel MainMenuTitle;
+    private javax.swing.JButton Main_Menu_Btn_1;
     private javax.swing.JComboBox<String> Medical_Displine_Combo;
     private javax.swing.JMenuBar Register_New_Doctor;
     private javax.swing.JButton Submit_Btn_DctrForm;

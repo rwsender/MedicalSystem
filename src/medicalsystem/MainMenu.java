@@ -50,6 +50,11 @@ public class MainMenu extends javax.swing.JFrame {
         MainMenuTitle.setText("Medical Resource Managment System");
 
         Admin_Button.setText("Admin Area");
+        Admin_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Admin_ButtonActionPerformed(evt);
+            }
+        });
 
         Reg_Doctor_Button.setText("Register New Doctor");
         Reg_Doctor_Button.addActionListener(new java.awt.event.ActionListener() {
@@ -59,6 +64,11 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         View_Doctor_Button.setText("View Doctors");
+        View_Doctor_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                View_Doctor_ButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -140,6 +150,18 @@ public class MainMenu extends javax.swing.JFrame {
         RegisterNewDoctor d = new RegisterNewDoctor();
         d.setVisible(true);
     }//GEN-LAST:event_Reg_Doctor_ButtonActionPerformed
+
+    private void Admin_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Admin_ButtonActionPerformed
+        this.setVisible(false);
+        AdminArea a = new AdminArea();
+        a.setVisible(true);
+    }//GEN-LAST:event_Admin_ButtonActionPerformed
+
+    private void View_Doctor_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_View_Doctor_ButtonActionPerformed
+        this.setVisible(false);
+        DoctorAvailability a = new DoctorAvailability();
+        a.setVisible(true);
+    }//GEN-LAST:event_View_Doctor_ButtonActionPerformed
 
     /**
      * @param args the command line arguments

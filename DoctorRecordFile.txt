@@ -47,6 +47,7 @@ Telephone
 07512035490
 Intensive Care Medicine
  
+<<<<<<< HEAD
 29/11/17 12:57:38
 test 123
 address 123
@@ -59,5 +60,54 @@ test 123
 address 123
 Telephone
 02890605473
+=======
+29/11/17 12:58:50
+aaaa
+aaaa
+FaceTime
+aaaaaa
+Hematology
+ 
+30/11/17 10:04:32
+
+
+Telephone
+
+Cardiology
+ 
+30/11/17 10:04:33
+
+
+Telephone
+
+Cardiology
+ 
+30/11/17 10:04:33
+
+
+Telephone
+
+Cardiology
+ 
+30/11/17 10:04:33
+
+
+Telephone
+
+Cardiology
+ 
+30/11/17 10:04:33
+
+
+Telephone
+
+Cardiology
+ 
+30/11/17 10:04:34
+
+
+Telephone
+
+>>>>>>> 63792e4381c512e92982bba2103c7787589d63c1
 Cardiology
  
