@@ -19,6 +19,7 @@ public class MainMenu extends javax.swing.JFrame {
     public MainMenu() {
         initComponents();
         this.setLocationRelativeTo(null);
+
     }
 
     /**
@@ -161,6 +162,8 @@ public class MainMenu extends javax.swing.JFrame {
         this.setVisible(false);
         DoctorAvailability a = new DoctorAvailability();
         a.setVisible(true);
+        ReadInDoctors readIn = new ReadInDoctors();
+        readIn.readIn();
     }//GEN-LAST:event_View_Doctor_ButtonActionPerformed
 
     /**
@@ -189,7 +192,7 @@ public class MainMenu extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(MainMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        ReadInDoctors readDocotors = new ReadInDoctors();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

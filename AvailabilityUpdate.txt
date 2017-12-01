@@ -1,0 +1,72 @@
+Conor Murphy
+Sunday 08:00 12:00
+Monday 12:00 15:00
+Tuesday 18:00 21:30
+Wednesday 19:00 23:15
+Thursday 08:00 18:00
+Friday 16:00 16:00
+Saturday 16:00 16:00
+Carol McKee
+Sunday 02:00 11:00
+Monday 05:00 10:00
+Tuesday 11:00 23:45
+Wednesday 09:00 11:15
+Thursday 08:00 18:00
+Friday 16:00 16:00
+Saturday 16:00 16:00
+Robert Jones
+Sunday 02:00 02:00
+Monday 02:00 02:00
+Tuesday 02:00 02:45
+Wednesday 02:00 02:00
+Thursday 08:00 18:00
+Friday 16:00 16:00
+Saturday 16:00 16:00
+Mary Shelley
+Sunday 02:00 02:00
+Monday 02:00 02:00
+Tuesday 02:00 02:00
+Wednesday 02:00 02:00
+Thursday 08:00 18:00
+Friday 16:00 16:00
+Saturday 18:00 21:00
+John Smith
+Sunday 02:00 11:00
+Monday 05:00 10:00
+Tuesday 11:00 23:45
+Wednesday 09:00 11:15
+Thursday 08:00 18:00
+Friday 16:00 16:00
+Saturday 16:00 16:00
+Laura Penny
+Sunday 02:00 11:00
+Monday 05:00 10:00
+Tuesday 11:00 23:45
+Wednesday 09:00 11:15
+Thursday 08:00 18:00
+Friday 16:00 16:00
+Saturday 16:00 16:00
+Mark Matthews
+Sunday 02:00 11:00
+Monday 05:00 10:00
+Tuesday 11:00 23:45
+Wednesday 09:00 11:15
+Thursday 08:00 08:00
+Friday 16:00 16:00
+Saturday 16:00 16:00
+Ciaran Bell
+Sunday 02:00 11:00
+Monday 05:00 10:00
+Tuesday 11:00 23:45
+Wednesday 09:00 11:15
+Thursday 08:00 18:00
+Friday 16:00 16:00
+Saturday 02:00 11:00
+Nicola Johnson
+Sunday 02:00 02:00
+Monday 02:00 02:00
+Tuesday 11:00 23:45
+Wednesday 09:00 11:15
+Thursday 08:00 08:00
+Friday 16:00 16:00
+Saturday 09:00 17:00
