@@ -5,7 +5,10 @@
  */
 package medicalsystem;
 
+import java.io.IOException;
 import java.util.Arrays;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -289,11 +292,11 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     }//GEN-LAST:event_Contact_Address_BoxActionPerformed
 
     private void Cancel_Button_DrFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cancel_Button_DrFormActionPerformed
-         Doctor_Name_Field.setText("");
-         Contact_Number_ID.setText("");
-         Contact_Address_Box.setText("");
-         Contact_Method_Combo.setSelectedItem("Telephone");
-         Medical_Displine_Combo.setSelectedItem("Cardiology");
+        Doctor_Name_Field.setText("");
+        Contact_Number_ID.setText("");
+        Contact_Address_Box.setText("");
+        Contact_Method_Combo.setSelectedItem("Telephone");
+        Medical_Displine_Combo.setSelectedItem("Cardiology");
     }//GEN-LAST:event_Cancel_Button_DrFormActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
@@ -304,35 +307,42 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
 
     private void Submit_Btn_DctrFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submit_Btn_DctrFormActionPerformed
         class Doctor {
-         String docName ;
-         String contactID ;
-         String contactAddress;
-         String contactMethod ;
-         String medicalDispiline;
-         
+
+            String docName;
+            String contactID;
+            String contactAddress;
+            String contactMethod;
+            String medicalDispiline;
+            String certDate;
         }
         Object choice = Medical_Displine_Combo.getSelectedItem();
         String choiceString = choice.toString();
         Object contactChoice = Contact_Method_Combo.getSelectedItem();
         String contactChoiceString = contactChoice.toString();
-        int doctorAmount = 0;  
         AddNewDoctor a = new AddNewDoctor();
-      
-       String docName = Doctor_Name_Field.getText();
-       String contactID = Contact_Number_ID.getText();
-       String contactAddress = Contact_Address_Box.getText();
-       String contactMethod = contactChoiceString;
-       String medicalDispiline = choiceString;
-       String[] Doctor = new String[] {docName, contactID, contactAddress, contactMethod, medicalDispiline };
-       doctorAmount = doctorAmount + 1;
-       System.out.println(Doctor);
-       a.save(Doctor);
-       
+
+        String docName = Doctor_Name_Field.getText(); //get the values from the form and save/convet them to strings
+        String contactID = Contact_Number_ID.getText();
+        String contactAddress = Contact_Address_Box.getText();
+        String contactMethod = contactChoiceString;
+        String medicalDispiline = choiceString;
+        String certDate = Reg_Doc_Cert_Date.getText();
+        if (this.Medical_Displine_Combo.getSelectedItem() != "Surgery") {
+            String[] Doctor = new String[]{docName, contactID, contactAddress, contactMethod, medicalDispiline};
+            String doc = Arrays.toString(Doctor); //convert the array to a string
+            a.save(doc); //save the string to text file
+        } else {
+            String[] Doctor = new String[]{docName, contactID, contactAddress, contactMethod, medicalDispiline, certDate};
+            String doc = Arrays.toString(Doctor); //convert the array to a string
+            a.save(doc); //save the string to text file
+        }
+        //clear the form once submitted
         Doctor_Name_Field.setText("");
         Contact_Number_ID.setText("");
         Contact_Address_Box.setText("");
         Contact_Method_Combo.setSelectedItem("Telephone");
         Medical_Displine_Combo.setSelectedItem("Cardiology");
+        Reg_Doc_Cert_Date.setText("");
     }//GEN-LAST:event_Submit_Btn_DctrFormActionPerformed
 
     private void Main_Menu_Btn_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Main_Menu_Btn_1ActionPerformed
@@ -342,11 +352,10 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     }//GEN-LAST:event_Main_Menu_Btn_1ActionPerformed
 
     private void Medical_Displine_ComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Medical_Displine_ComboActionPerformed
-        if(this.Medical_Displine_Combo.getSelectedItem() == "Surgery"){
+        if (this.Medical_Displine_Combo.getSelectedItem() == "Surgery") {
             this.Reg_Doc_Cert_Date.setVisible(true);
             this.Reg_Doc_Cert_Date_Lbl.setVisible(true);
-        }
-        else {
+        } else {
             this.Reg_Doc_Cert_Date.setVisible(false);
             this.Reg_Doc_Cert_Date_Lbl.setVisible(false);
         }
@@ -360,7 +369,7 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        
+
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
