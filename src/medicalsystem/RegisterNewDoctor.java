@@ -328,13 +328,9 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
         String medicalDispiline = choiceString;
         String certDate = Reg_Doc_Cert_Date.getText();
         if (this.Medical_Displine_Combo.getSelectedItem() != "Surgery") {
-            String[] Doctor = new String[]{docName, contactID, contactAddress, contactMethod, medicalDispiline};
-            String doc = Arrays.toString(Doctor); //convert the array to a string
-            a.save(doc); //save the string to text file
+           a.save(docName, contactID, contactAddress, contactMethod, medicalDispiline); //save the string to text file
         } else {
-            String[] Doctor = new String[]{docName, contactID, contactAddress, contactMethod, medicalDispiline, certDate};
-            String doc = Arrays.toString(Doctor); //convert the array to a string
-            a.save(doc); //save the string to text file
+            a.saveCert(docName, contactID, contactAddress, contactMethod, medicalDispiline, certDate); //save the string to text file
         }
         //clear the form once submitted
         Doctor_Name_Field.setText("");

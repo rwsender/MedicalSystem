@@ -188,7 +188,6 @@ public class MainMenu extends javax.swing.JFrame {
         DoctorAvailability a = new DoctorAvailability();
         a.setVisible(true);
         ReadInDoctors readIn = new ReadInDoctors();
-        readIn.readIn();
         try {
             readIn.readInDoctorInfo();
         } catch (FileNotFoundException ex) {

@@ -31,8 +31,27 @@ public class ReadInDoctors {
 
         String[] arr = lines.toArray(new String[0]);
         for(int i = 0; i < 5; i++){
-            System.out.println(lines.get(0).toString());
+            System.out.println(lines.get(i).toString());
         }
         }
+  public static void readData() throws FileNotFoundException{
+      Scanner sc = new Scanner(new File("DoctorRecordsFile.txt"));
+      int i = 0;
+      int x = 0;
+      String[][] doctor = new String[100][5];
+      while (sc.hasNext() == true){
+      if (sc.hasNextLine() == true){
+          doctor[i][x] = sc.nextLine();
+          x++;
+      }
+      else{
+          i++;
+      }
+  }
+      for(int y = 0; y < doctor[1].length; y++){
+      System.out.println(doctor[1].length);
+      System.out.println(doctor[1][y]);
+  } 
+  }
   }
 
