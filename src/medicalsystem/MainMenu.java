@@ -5,6 +5,9 @@
  */
 package medicalsystem;
 
+import java.io.FileNotFoundException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
 
 /**
@@ -186,6 +189,11 @@ public class MainMenu extends javax.swing.JFrame {
         a.setVisible(true);
         ReadInDoctors readIn = new ReadInDoctors();
         readIn.readIn();
+        try {
+            readIn.readInDoctorInfo();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(MainMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_View_Doctor_ButtonActionPerformed
 
     /**
