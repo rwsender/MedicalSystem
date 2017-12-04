@@ -190,8 +190,8 @@ public class MainMenu extends javax.swing.JFrame {
         ReadInDoctors readIn = new ReadInDoctors();
      
         try {
-            readIn.readData();
-           // readIn.readInDoctorInfo();
+            Object[][] obj = readIn.readData();
+            System.out.println(obj);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(MainMenu.class.getName()).log(Level.SEVERE, null, ex);
         }

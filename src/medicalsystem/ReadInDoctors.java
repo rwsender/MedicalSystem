@@ -35,7 +35,7 @@ public class ReadInDoctors {
 //            System.out.println(lines.get(i).toString());
 //        }
 //        }
-  public static void readData() throws FileNotFoundException{
+  public Object[][] readData() throws FileNotFoundException{
       Scanner sc = new Scanner(new File("DoctorRecordsFile.txt"));
       String line;
       int emptyFile = 0 ;
@@ -72,7 +72,8 @@ public class ReadInDoctors {
      // for(int y = 0; y < doctor[0].length; y++){
       //  System.out.println(doctor[0].length);
       //  System.out.println(doctor[0][y]);
-      } 
+      }
+      return new Object[][]{doctor[0]};
   }
   }
 //}
