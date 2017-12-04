@@ -43,8 +43,7 @@ public class ReadInDoctors {
       int i = 0;
       int x = 0;
       String[][] doctor = new String[100][5];
-      while (emptyFile <= 1) {
-
+      while (emptyFile < 1) {
             if (sc.hasNextLine()) {
                 line = sc.nextLine();
 
@@ -67,9 +66,6 @@ public class ReadInDoctors {
                 }
             }
         
-     // for(int y = 0; y < doctor[0].length; y++){
-      //  System.out.println(doctor[0].length);
-      //  System.out.println(doctor[0][y]);
       }
       return new Object[][]{doctor[0]};
   }
