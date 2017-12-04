@@ -43,32 +43,30 @@ public class ReadInDoctors {
       int i = 0;
       int x = 0;
       String[][] doctor = new String[100][5];
-      while (emptyFile <3){
-      line = sc.nextLine() ;
-      //System.out.println("i called ");
-      if ((!line.isEmpty())){
-            doctor[i][x] = line;
-            System.out.println(i);
-            System.out.println(x);
-            System.out.println(doctor[i][x]);
-          
-             x++;
-            emptyFile = 0 ; 
-          //System.out.println("i am null");
-         
-      }
-      else{
-            i++;
-           emptyFile++ ;
-             x = 0;
-   
-     // else{
-      //    doctor[i][x] = sc.nextLine();
-     //      System.out.println(doctor[i][x]);
-       //   x++;
-          // System.out.println("i am else");
-     // }
-  }
+      while (emptyFile <= 1) {
+
+            if (sc.hasNextLine()) {
+                line = sc.nextLine();
+
+                if ((!line.isEmpty())) {
+                    doctor[i][x] = line;
+                    System.out.println(doctor[i][x]);
+
+                    x++;
+                    emptyFile = 0;
+                } else {
+                    System.out.println("PRE call emptyFile: " + emptyFile);
+                    emptyFile++;
+                    System.out.println("Post call emptyFile: " + emptyFile);
+                    if (emptyFile >= 2) {
+                        sc.close();
+                    } else {
+                        i++;
+                        x = 0;
+                    }
+                }
+            }
+        
      // for(int y = 0; y < doctor[0].length; y++){
       //  System.out.println(doctor[0].length);
       //  System.out.println(doctor[0][y]);
