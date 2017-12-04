@@ -36,6 +36,7 @@ public class ReadInDoctors {
 //        }
 //        }
   public Object[][] readData() throws FileNotFoundException{
+      System.out.println("ReadData has been called");
       Scanner sc = new Scanner(new File("DoctorRecordsFile.txt"));
       String line;
       int emptyFile = 0 ;
@@ -43,10 +44,10 @@ public class ReadInDoctors {
       int i = 0;
       int x = 0;
       String[][] doctor = new String[100][5];
-      while (emptyFile < 1) {
-            if (sc.hasNextLine()) {
+      while (sc.hasNextLine() == true) {
+         // if (sc.hasNextLine()) {
                 line = sc.nextLine();
-
+            
                 if ((!line.isEmpty())) {
                     doctor[i][x] = line;
                     System.out.println(doctor[i][x]);
@@ -57,17 +58,20 @@ public class ReadInDoctors {
                     System.out.println("PRE call emptyFile: " + emptyFile);
                     emptyFile++;
                     System.out.println("Post call emptyFile: " + emptyFile);
+                }
                     if (emptyFile >= 2) {
                         sc.close();
                     } else {
                         i++;
                         x = 0;
                     }
-                }
-            }
-        
+                //}
+            
       }
+      
+      System.out.println("loop is over ");
+      sc.close();
       return new Object[][]{doctor[0]};
   }
-  }
+}
 //}

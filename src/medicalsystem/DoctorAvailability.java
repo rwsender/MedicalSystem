@@ -5,6 +5,10 @@
  */
 package medicalsystem;
 
+import java.io.FileNotFoundException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author user
@@ -466,6 +470,14 @@ public class DoctorAvailability extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new DoctorAvailability().setVisible(true);
+                 ReadInDoctors readIn= new ReadInDoctors();       
+                try {
+                           
+            Object[][] obj = readIn.readData();
+            System.out.println(obj);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(MainMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
             }
         });
     }
