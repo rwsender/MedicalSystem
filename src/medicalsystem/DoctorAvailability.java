@@ -454,10 +454,11 @@ public class DoctorAvailability extends javax.swing.JFrame {
         
             
             ReadInDoctors doc = new ReadInDoctors();
-            int len = 10;
-     
+            int len = 100;
+     //current size of the array 
             int i = 0;
             Object searchObject = jComboBox1.getSelectedItem();
+            //value of the combo boxis used as a string to compare 
             String searchString = searchObject.toString();
             System.out.println(searchString);
             
@@ -465,8 +466,9 @@ public class DoctorAvailability extends javax.swing.JFrame {
            
             while(len > i){
                 if(searchString.equals(doc.getDataAsString(i, 4))){
+                    //retriving element 4 from the array as this will always be the speciality 
                     System.out.println("New result found: " + (doc.getDataAsString(i, 0)));
-                   
+                   //outputting the doctors name 
                     System.out.println("New result found!");
                 }
                 i++;
