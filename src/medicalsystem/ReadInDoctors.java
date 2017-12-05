@@ -11,6 +11,7 @@ import java.util.Scanner;
 
 
 public class ReadInDoctors {
+    static String[][] doctor = new String[100][5];
     public void readIn() {
         try (BufferedReader br = new BufferedReader(new FileReader("AvailabilityUpdate.txt"))) {
             String line;
@@ -43,7 +44,6 @@ public class ReadInDoctors {
       
       int i = 0;
       int x = 0;
-      String[][] doctor = new String[100][5];
       while (sc.hasNextLine() == true) {
          // if (sc.hasNextLine()) {
                 line = sc.nextLine();
@@ -62,6 +62,7 @@ public class ReadInDoctors {
                     System.out.println("Post call emptyFile: " + emptyFile);
                     x = 0 ;
                     i ++;
+                    System.out.println(doctor[0][3]);
                 }
                     if (emptyFile >= 2) {
                         sc.close();
@@ -74,8 +75,13 @@ public class ReadInDoctors {
       }
       
       System.out.println("loop is over ");
+      
       sc.close();
       return new Object[][]{doctor[0]};
+  }
+  public String getDataAsString(int x, int y){
+      String data = doctor[x][y];
+      return data;
   }
 }
 //}

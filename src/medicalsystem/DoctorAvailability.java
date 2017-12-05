@@ -83,6 +83,11 @@ public class DoctorAvailability extends javax.swing.JFrame {
         });
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cardiology", "Pulmonology", "Infectious Disease", "Hematology", "Intensive Care Medicine", "Neurology", "Ophthalmology", "Orthopedics", "Urology", "Surgery" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
 
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
@@ -437,7 +442,32 @@ public class DoctorAvailability extends javax.swing.JFrame {
         this.setVisible(false);
         MainMenu a = new MainMenu();
         a.setVisible(true);
+      
     }//GEN-LAST:event_Main_Menu_Btn_2ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+ReadInDoctors read = new ReadInDoctors();
+        try {
+            Object[][] docInfo = read.readData();
+            System.out.println("docInfo: " + docInfo.toString());
+            int i = 0;
+            Object searchObject = jComboBox1.getSelectedItem();
+            String searchString = searchObject.toString();
+
+            Object[] results = new Object[10];
+            while(docInfo.length <= i){
+                if(searchString.equals(docInfo[i][4])){
+                    System.out.println("New result found: " + docInfo[i][4].toString());
+                    results = (Object[]) docInfo[i][4];
+                    System.out.println("New result found!");
+                }
+                i++;
+                System.out.println(results.toString());
+            }
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(DoctorAvailability.class.getName()).log(Level.SEVERE, null, ex);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
