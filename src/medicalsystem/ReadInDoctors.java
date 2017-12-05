@@ -50,20 +50,24 @@ public class ReadInDoctors {
             
                 if ((!line.isEmpty())) {
                     doctor[i][x] = line;
+                    System.out.println("stored at position i = " + i + " x = " + x);
                     System.out.println(doctor[i][x]);
 
                     x++;
                     emptyFile = 0;
+                    
                 } else {
                     System.out.println("PRE call emptyFile: " + emptyFile);
                     emptyFile++;
                     System.out.println("Post call emptyFile: " + emptyFile);
+                    x = 0 ;
+                    i ++;
                 }
                     if (emptyFile >= 2) {
                         sc.close();
-                    } else {
-                        i++;
-                        x = 0;
+                 //   } else {
+                        
+                      
                     }
                 //}
             
