@@ -15,17 +15,6 @@ import java.io.PrintWriter;
  * @author user
  */
 public class AddNewDoctor {
-//
-//public static void save(String s) {
-//
-//        try (FileWriter fw = new FileWriter("DoctorRecordsFile.txt", true); //creates a new filewriter, true is for appending files so the data is not overwritten
-//                BufferedWriter bw = new BufferedWriter(fw);
-//                PrintWriter out = new PrintWriter(bw)) {
-//            out.println(s);
-//        } catch (IOException e) {
-//            System.out.println("IOExeption: " + e);
-//        }
-//}
 
     public void saveCert(String docName, String contactID, String contactAddress, String contactMethod, String medicalDispline, String certDate) {
 
