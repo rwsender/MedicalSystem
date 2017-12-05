@@ -356,12 +356,13 @@ public class DoctorAvailability extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(482, Short.MAX_VALUE)
+                .addContainerGap(509, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(Main_Menu_Btn_2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(Doc_Avail_Title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Main_Menu_Btn_2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Doc_Avail_Title)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -442,31 +443,37 @@ public class DoctorAvailability extends javax.swing.JFrame {
         this.setVisible(false);
         MainMenu a = new MainMenu();
         a.setVisible(true);
+        ReadInDoctors doc = new ReadInDoctors();
+        String str = doc.getDataAsString(0, 0);
+        //method to reference the 2d array
       
     }//GEN-LAST:event_Main_Menu_Btn_2ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-ReadInDoctors read = new ReadInDoctors();
-        try {
-            Object[][] docInfo = read.readData();
-            System.out.println("docInfo: " + docInfo.toString());
+
+        
+            
+            ReadInDoctors doc = new ReadInDoctors();
+            int len = 10;
+     
             int i = 0;
             Object searchObject = jComboBox1.getSelectedItem();
             String searchString = searchObject.toString();
+            System.out.println(searchString);
+            
 
-            Object[] results = new Object[10];
-            while(docInfo.length <= i){
-                if(searchString.equals(docInfo[i][4])){
-                    System.out.println("New result found: " + docInfo[i][4].toString());
-                    results = (Object[]) docInfo[i][4];
+           
+            while(len > i){
+                if(searchString.equals(doc.getDataAsString(i, 4))){
+                    System.out.println("New result found: " + (doc.getDataAsString(i, 0)));
+                   
                     System.out.println("New result found!");
                 }
                 i++;
-                System.out.println(results.toString());
+                
             }
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(DoctorAvailability.class.getName()).log(Level.SEVERE, null, ex);
-        }        // TODO add your handling code here:
+        
+            // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**

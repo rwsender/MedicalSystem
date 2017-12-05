@@ -99,14 +99,15 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace pref="482" max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace pref="509" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jComboBox1" min="-2" pref="133" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="Doc_Avail_Title" max="32767" attributes="0"/>
-                          <Component id="Main_Menu_Btn_2" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="Main_Menu_Btn_2" min="-2" pref="118" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="jComboBox1" min="-2" pref="133" max="-2" attributes="0"/>
+                      <Component id="Doc_Avail_Title" min="-2" max="-2" attributes="0"/>
                       <Component id="jPanel2" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
