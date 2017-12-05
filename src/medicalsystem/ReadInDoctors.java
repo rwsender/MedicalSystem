@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 
 public class ReadInDoctors {
-    static String[][] doctor = new String[100][5];
+    static String[][] doctor = new String[100][6];
     public void readIn() {
         try (BufferedReader br = new BufferedReader(new FileReader("AvailabilityUpdate.txt"))) {
             String line;
@@ -62,7 +62,7 @@ public class ReadInDoctors {
                     System.out.println("Post call emptyFile: " + emptyFile);
                     x = 0 ;
                     i ++;
-                    System.out.println(doctor[0][3]);
+              
                 }
                     if (emptyFile >= 2) {
                         sc.close();

@@ -450,9 +450,21 @@ public class DoctorAvailability extends javax.swing.JFrame {
     }//GEN-LAST:event_Main_Menu_Btn_2ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-
+              Doctor_Name_1.setText("undefined");
+              Doctor_Name_2.setText("undefined");
+              Doctor_Name_3.setText("undefined");
+              Doctor_Name_4.setText("undefined");
+              Doctor_Name_5.setText("undefined");
+              Doctor_Name_6.setText("undefined");
+              Doctor_Name_7.setText("undefined");
+              Doctor_Name_8.setText("undefined");
+              Doctor_Name_9.setText("undefined");
+              Doctor_Name_10.setText("undefined");
+              //clearing the labels 
+            String[] doctorsNames = new String[10];
+            int foundAmount = 0;
+            String name ;
         
-            
             ReadInDoctors doc = new ReadInDoctors();
             int len = 100;
      //current size of the array 
@@ -468,12 +480,53 @@ public class DoctorAvailability extends javax.swing.JFrame {
                 if(searchString.equals(doc.getDataAsString(i, 4))){
                     //retriving element 4 from the array as this will always be the speciality 
                     System.out.println("New result found: " + (doc.getDataAsString(i, 0)));
+                    foundAmount ++ ;
+                   name = (doc.getDataAsString(i, 0));
+                    switch (foundAmount) {
+                    case 1: 
+                     Doctor_Name_1.setText(name);
+                     break;
+                     
+                     case 2: 
+                     Doctor_Name_2.setText(name);
+                     break;
+                     case 3: 
+                     Doctor_Name_3.setText(name);
+                     break;
+                     case 4: 
+                     Doctor_Name_4.setText(name);
+                     break;
+                     case 5: 
+                     Doctor_Name_5.setText(name);
+                     break;
+                     case 6: 
+                     Doctor_Name_6.setText(name);
+                     break;
+                     case 7: 
+                     Doctor_Name_7.setText(name);
+                     break;
+                     case 8: 
+                     Doctor_Name_8.setText(name);
+                     break;
+                     case 9: 
+                     Doctor_Name_9.setText(name);
+                     break;
+                     case 10: 
+                     Doctor_Name_10.setText(name);
+                     break;
+                }
+                  
+               
                    //outputting the doctors name 
-                    System.out.println("New result found!");
+                 
                 }
                 i++;
                 
+                 
+                
             }
+            
+            
         
             // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
