@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class ReadInDoctors {
 
-    static String[][] doctor = new String[100][6];
+    static String[][] doctor = new String[100][6]; //creating new 2D doctor array
 
     public void readIn() {
         try (BufferedReader br = new BufferedReader(new FileReader("AvailabilityUpdate.txt"))) {
@@ -33,24 +33,24 @@ public class ReadInDoctors {
 
         int i = 0;
         int x = 0;
-        while (sc.hasNextLine() == true) {
+        while (sc.hasNextLine() == true) { //while a new line is avaialble
 
-            line = sc.nextLine();
+            line = sc.nextLine(); //read in a new line
 
-            if ((!line.isEmpty())) {
-                doctor[i][x] = line;
+            if ((!line.isEmpty())) { //if the line isn't empty
+                doctor[i][x] = line; //assign line(scanner input) to pos in array
 
                 x++;
-                emptyFile = 0;
+                emptyFile = 0; //set empty file to 0
 
             } else {
-                emptyFile++;
+                emptyFile++; 
                 x = 0;
                 i++;
 
             }
-            if (emptyFile >= 2) {
-                sc.close();
+            if (emptyFile >= 2) { //if empty file is >3 it means you have reached the end of the file
+                sc.close(); //close the scaanner
             }
 
         }
@@ -60,7 +60,7 @@ public class ReadInDoctors {
         return new Object[][]{doctor[0]};
     }
 
-    public String getDataAsString(int x, int y) {
+    public String getDataAsString(int x, int y) { //method used for searching data from positions within doctor 2D array
         String data = doctor[x][y];
         return data;
     }

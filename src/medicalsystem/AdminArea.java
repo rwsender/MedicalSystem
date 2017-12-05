@@ -371,10 +371,9 @@ public class AdminArea extends javax.swing.JFrame {
                     foundAmount ++ ;
                    name = (doc.getDataAsString(i, 0));
                     switch (foundAmount) {
-                    case 1: 
+                     case 1: 
                      Doctor_Name_1.setText(name);
                      break;
-                     
                      case 2: 
                      Doctor_Name_2.setText(name);
                      break;

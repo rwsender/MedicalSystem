@@ -466,24 +466,21 @@ public class DoctorAvailability extends javax.swing.JFrame {
             String name ;
         
             ReadInDoctors doc = new ReadInDoctors();
+           
             int len = 100;
      //current size of the array 
             int i = 0;
             Object searchObject = jComboBox1.getSelectedItem();
             //value of the combo boxis used as a string to compare 
             String searchString = searchObject.toString();
-            System.out.println(searchString);
-            
 
-           
             while(len > i){
+                
                 if(searchString.equals(doc.getDataAsString(i, 4))){
                     //retriving element 4 from the array as this will always be the speciality 
-                    System.out.println("New result found: " + (doc.getDataAsString(i, 0)));
                     foundAmount ++ ;
                    name = (doc.getDataAsString(i, 0));
                     switch (foundAmount) {
-                       
                     case 1: 
                      Doctor_Name_1.setText(name);
                      break;
