@@ -48,16 +48,16 @@ public class AdminArea extends javax.swing.JFrame {
         Doctor_Name_7 = new javax.swing.JLabel();
         Doctor_Name_8 = new javax.swing.JLabel();
         Doctor_Name_10 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        Delete_Button_1 = new javax.swing.JButton();
+        Delete_Button_2 = new javax.swing.JButton();
+        Delete_Button_3 = new javax.swing.JButton();
+        Delete_Button_4 = new javax.swing.JButton();
+        Delete_Button_5 = new javax.swing.JButton();
+        Delete_Button_6 = new javax.swing.JButton();
+        Delete_Button_7 = new javax.swing.JButton();
+        Delete_Button_8 = new javax.swing.JButton();
+        Delete_Button_9 = new javax.swing.JButton();
+        Delete_Button_10 = new javax.swing.JButton();
         Register_New_Doctor = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -111,30 +111,30 @@ public class AdminArea extends javax.swing.JFrame {
 
         Doctor_Name_10.setText("Unregistered");
 
-        jButton1.setText("Delete");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Delete_Button_1.setText("Delete");
+        Delete_Button_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                Delete_Button_1ActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Delete");
+        Delete_Button_2.setText("Delete");
 
-        jButton3.setText("Delete");
+        Delete_Button_3.setText("Delete");
 
-        jButton4.setText("Delete");
+        Delete_Button_4.setText("Delete");
 
-        jButton5.setText("Delete");
+        Delete_Button_5.setText("Delete");
 
-        jButton6.setText("Delete");
+        Delete_Button_6.setText("Delete");
 
-        jButton7.setText("Delete");
+        Delete_Button_7.setText("Delete");
 
-        jButton8.setText("Delete");
+        Delete_Button_8.setText("Delete");
 
-        jButton9.setText("Delete");
+        Delete_Button_9.setText("Delete");
 
-        jButton10.setText("Delete");
+        Delete_Button_10.setText("Delete");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -146,46 +146,46 @@ public class AdminArea extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton7)
+                                .addComponent(Delete_Button_7)
                                 .addGap(35, 35, 35)
                                 .addComponent(Doctor_Name_7, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton8)
+                                .addComponent(Delete_Button_8)
                                 .addGap(35, 35, 35)
                                 .addComponent(Doctor_Name_8, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton9)
+                                .addComponent(Delete_Button_9)
                                 .addGap(35, 35, 35)
                                 .addComponent(Doctor_Name_9, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton10)
+                                .addComponent(Delete_Button_10)
                                 .addGap(35, 35, 35)
                                 .addComponent(Doctor_Name_10, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton5)
+                                .addComponent(Delete_Button_5)
                                 .addGap(35, 35, 35)
                                 .addComponent(Doctor_Name_5, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton2)
+                                .addComponent(Delete_Button_2)
                                 .addGap(35, 35, 35)
                                 .addComponent(Doctor_Name_2, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton1)
+                                .addComponent(Delete_Button_1)
                                 .addGap(35, 35, 35)
                                 .addComponent(Doctor_Name_1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton3)
+                                .addComponent(Delete_Button_3)
                                 .addGap(35, 35, 35)
                                 .addComponent(Doctor_Name_3, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton4)
+                                .addComponent(Delete_Button_4)
                                 .addGap(35, 35, 35)
                                 .addComponent(Doctor_Name_4, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton6)
+                                .addComponent(Delete_Button_6)
                                 .addGap(35, 35, 35)
                                 .addComponent(Doctor_Name_6, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(22, Short.MAX_VALUE))))
@@ -196,43 +196,43 @@ public class AdminArea extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Doctor_Name_1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
+                    .addComponent(Delete_Button_1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Doctor_Name_2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2))
+                    .addComponent(Delete_Button_2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Doctor_Name_3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3))
+                    .addComponent(Delete_Button_3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Doctor_Name_4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4))
+                    .addComponent(Delete_Button_4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Doctor_Name_5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5))
+                    .addComponent(Delete_Button_5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Doctor_Name_6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6))
+                    .addComponent(Delete_Button_6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Doctor_Name_7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7))
+                    .addComponent(Delete_Button_7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Doctor_Name_8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8))
+                    .addComponent(Delete_Button_8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Doctor_Name_9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9))
+                    .addComponent(Delete_Button_9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Doctor_Name_10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10))
+                    .addComponent(Delete_Button_10))
                 .addGap(12, 12, 12))
         );
 
@@ -412,9 +412,9 @@ public class AdminArea extends javax.swing.JFrame {
             // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void Delete_Button_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Delete_Button_1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_Delete_Button_1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -460,6 +460,16 @@ public class AdminArea extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Delete_Button_1;
+    private javax.swing.JButton Delete_Button_10;
+    private javax.swing.JButton Delete_Button_2;
+    private javax.swing.JButton Delete_Button_3;
+    private javax.swing.JButton Delete_Button_4;
+    private javax.swing.JButton Delete_Button_5;
+    private javax.swing.JButton Delete_Button_6;
+    private javax.swing.JButton Delete_Button_7;
+    private javax.swing.JButton Delete_Button_8;
+    private javax.swing.JButton Delete_Button_9;
     private javax.swing.JLabel Doc_Avail_Title;
     private javax.swing.JLabel Doctor_Name_1;
     private javax.swing.JLabel Doctor_Name_10;
@@ -474,16 +484,6 @@ public class AdminArea extends javax.swing.JFrame {
     private javax.swing.JLabel MainMenuTitle;
     private javax.swing.JButton Main_Menu_Btn_2;
     private javax.swing.JMenuBar Register_New_Doctor;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
