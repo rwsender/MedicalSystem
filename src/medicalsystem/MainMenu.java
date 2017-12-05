@@ -41,6 +41,7 @@ public class MainMenu extends javax.swing.JFrame {
         View_Doctor_Button = new javax.swing.JButton();
         Reg_Doctor_Button = new javax.swing.JButton();
         Admin_Button = new javax.swing.JButton();
+        View_Doctor_Button1 = new javax.swing.JButton();
         Register_New_Doctor = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -82,16 +83,25 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
+        View_Doctor_Button1.setText("View Doctor Details");
+        View_Doctor_Button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                View_Doctor_Button1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Reg_Doctor_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(View_Doctor_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Admin_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(Reg_Doctor_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(View_Doctor_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Admin_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(View_Doctor_Button1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -103,6 +113,8 @@ public class MainMenu extends javax.swing.JFrame {
                 .addComponent(Reg_Doctor_Button)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(View_Doctor_Button)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(View_Doctor_Button1)
                 .addContainerGap())
         );
 
@@ -120,7 +132,7 @@ public class MainMenu extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap(259, Short.MAX_VALUE))
+                .addContainerGap(230, Short.MAX_VALUE))
         );
 
         Register_New_Doctor.setBackground(new java.awt.Color(51, 102, 255));
@@ -189,8 +201,7 @@ public class MainMenu extends javax.swing.JFrame {
         a.setVisible(true);
         ReadInDoctors readIn = new ReadInDoctors();
          try {
-            Object[][] obj = readIn.readData();
-            System.out.println(obj);
+            Object[][] obj = readIn.readAvailability();
         } catch (FileNotFoundException ex) {
             Logger.getLogger(MainMenu.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -198,6 +209,12 @@ public class MainMenu extends javax.swing.JFrame {
  
     
     }//GEN-LAST:event_View_Doctor_ButtonActionPerformed
+
+    private void View_Doctor_Button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_View_Doctor_Button1ActionPerformed
+        ViewDoctorDetails d = new ViewDoctorDetails();
+        this.setVisible(false);
+        d.setVisible(true);
+    }//GEN-LAST:event_View_Doctor_Button1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,6 +257,7 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JButton Reg_Doctor_Button;
     private javax.swing.JMenuBar Register_New_Doctor;
     private javax.swing.JButton View_Doctor_Button;
+    private javax.swing.JButton View_Doctor_Button1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;

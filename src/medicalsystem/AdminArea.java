@@ -413,7 +413,14 @@ public class AdminArea extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void Delete_Button_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Delete_Button_1ActionPerformed
-        // TODO add your handling code here:
+        ReadInDoctors read = new ReadInDoctors();
+        Object[][] doctors;
+        try {
+            doctors = read.readData();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(AdminArea.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }//GEN-LAST:event_Delete_Button_1ActionPerformed
 
     /**

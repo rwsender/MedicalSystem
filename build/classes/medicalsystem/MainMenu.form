@@ -127,7 +127,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jPanel2" max="32767" attributes="0"/>
-                  <EmptySpace pref="259" max="32767" attributes="0"/>
+                  <EmptySpace pref="230" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -145,10 +145,13 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="Reg_Doctor_Button" max="32767" attributes="0"/>
-                          <Component id="View_Doctor_Button" alignment="0" max="32767" attributes="0"/>
-                          <Component id="Admin_Button" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="Reg_Doctor_Button" max="32767" attributes="0"/>
+                              <Component id="View_Doctor_Button" alignment="0" max="32767" attributes="0"/>
+                              <Component id="Admin_Button" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="View_Doctor_Button1" alignment="1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -163,6 +166,8 @@
                       <Component id="Reg_Doctor_Button" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="View_Doctor_Button" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="View_Doctor_Button1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -191,6 +196,14 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Admin_ButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="View_Doctor_Button1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="View Doctor Details"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="View_Doctor_Button1ActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

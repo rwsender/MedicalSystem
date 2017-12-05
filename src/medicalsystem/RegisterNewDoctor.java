@@ -6,7 +6,12 @@
 package medicalsystem;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -358,12 +363,19 @@ public class RegisterNewDoctor extends javax.swing.JFrame {
     }//GEN-LAST:event_Medical_Displine_ComboActionPerformed
 
     private void Reg_Doc_Cert_DateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Reg_Doc_Cert_DateActionPerformed
-        // TODO add your handling code here:
+    DateFormat format = new SimpleDateFormat("yyyy-mm-dd");
+    String d1 = Reg_Doc_Cert_Date.getText();
+        try {
+            Date d2 = format.parse(d1);
+            System.out.println(d2);
+        } catch (ParseException ex) {
+            Logger.getLogger(RegisterNewDoctor.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    System.out.println("last Cert over a year ago");
     }//GEN-LAST:event_Reg_Doc_Cert_DateActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String args[]) {
 
         /* Set the Nimbus look and feel */
