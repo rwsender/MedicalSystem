@@ -12,7 +12,6 @@ import java.util.Scanner;
 public class ReadInDoctors {
 
     static String[][] doctor = new String[100][6];
-    static String[][] availability = new String[100][7];
 
     public void readIn() {
         try (BufferedReader br = new BufferedReader(new FileReader("AvailabilityUpdate.txt"))) {
@@ -66,32 +65,4 @@ public class ReadInDoctors {
         return data;
     }
     
-       public Object[][] readAvailability() throws FileNotFoundException {
-        Scanner sc = new Scanner(new File("AvailabilityUpdate.txt"));
-        String line;
-
-        int i = 0;
-        int x = 0;
-        
-        while (sc.hasNextLine() == true) {
-
-            line = sc.nextLine();
-
-            while (x <= 7) {
-                availability[i][x] = line;
-                System.out.println("the value of i = " + i + "the value of x = " + x);
-                System.out.println(availability[i][x]);
-                x++;
-                line = sc.nextLine();
-            }
-            i++;
-        }
-        if(sc.hasNextLine() == false) {
-                sc.close();
-            }
-
-
-        sc.close();
-        return new Object[][]{doctor[0]};
-    }
 }

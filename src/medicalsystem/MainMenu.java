@@ -23,6 +23,7 @@ public class MainMenu extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
 
+
     }
 
     /**
@@ -199,12 +200,6 @@ public class MainMenu extends javax.swing.JFrame {
         this.setVisible(false);
         DoctorAvailability a = new DoctorAvailability();
         a.setVisible(true);
-        ReadInDoctors readIn = new ReadInDoctors();
-         try {
-            Object[][] obj = readIn.readAvailability();
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(MainMenu.class.getName()).log(Level.SEVERE, null, ex);
-        }
        
  
     
